@@ -29,25 +29,38 @@ open postman and follow the below steps ::
 #4) Body > raw > json
 
 {
-    "client_id": "Zy0mkE0Pj5-_OL-mpQjrNjq6dGm_pwlBYVPLJc1sZm8",
-    "client_id_issued_at": 1686282877,
-    "client_name": "89ac873c-e12b-4a1a-b0e0-7fc7c7daf88f",
-    "client_secret": "F2-FxqHzGcG-6_RoQcer98KqEPqoweiEdAAPGa1pZPj2kN_ew5VfKiix2-ysn9rk",
-    "redirect_uris": [
-        "http://localhost:8080/callback",
-        "http://example.com/callback"
+    "clientId": "client",
+    "clientIdIssuedAt": null,
+    "clientSecret": "your_client_secret",
+    "clientSecretExpiresAt": null,
+    "clientName": "Your Client Name",
+    "clientAuthenticationMethods": [
+        "client_secret_basic"
     ],
-    "grant_types": [
+    "authorizationGrantTypes": [
+        "refresh_token",
+        "client_credentials",
         "authorization_code"
     ],
-    "response_types": [
-        "code"
+    "redirect_uris": [
+        "http://example.com/callback",
+        "http://localhost:8080/callback"
     ],
-    "token_endpoint_auth_method": "client_secret_basic",
-    "id_token_signed_response_alg": "RS256",
-    "registration_client_uri": "http://localhost:9000/clientinfo?client_id=Zy0mkE0Pj5-_OL-mpQjrNjq6dGm_pwlBYVPLJc1sZm8",
-    "registration_access_token": "eyJraWQiOiI5MmU4MDEyMy1kN2JhLTRhZTctYjQ5Ni1hM2MzMjk1OTBiYTciLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJaeTBta0UwUGo1LV9PTC1tcFFqck5qcTZkR21fcHdsQllWUExKYzFzWm04IiwiYXVkIjoiWnkwbWtFMFBqNS1fT0wtbXBRanJOanE2ZEdtX3B3bEJZVlBMSmMxc1ptOCIsIm5iZiI6MTY4NjI4Mjk4OCwiVGVzdCI6IlRlc3QgQWNjZXNzIFRva2VuIiwic2NvcGUiOlsiY2xpZW50LnJlYWQiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwIiwiZXhwIjoxNjg2MjgzMjg4LCJpYXQiOjE2ODYyODI5ODgsInVzZXIiOiJaeTBta0UwUGo1LV9PTC1tcFFqck5qcTZkR21fcHdsQllWUExKYzFzWm04IiwiYXV0aG9yaXRpZXMiOltdfQ.Mh6Upm_2Yxgw34ZKO9x9ZyO32-g6WNADVLt9d4zE1MKXyyvRF-W8GbTJFe42lsgZUd41cb6eNKiY0UR1XsyYjMi_gtMtamgrGqm15AbVsSWO_smm2q7n7MWUp2ydAZwi5eC_Ps6-ZWHqR3WbLl6_CqZo9K4hCyJTIfY3R9oK9IPSE_F5KCnK0CwvLQzqJo--iLogKlk-iXKUOe_OM-fwekzpkXSvVfm7T9Qto_Lng8PvF2nYfPal0IGno5X1ew-vDLe11WYJ3euHSVckEIXAhnFT4RRvS2gAl3L4AHeuZY6xiguFNBA1nf6SO2oQZCmQ8vr6Kqm5YvfPR057cwX3IA",
-    "client_secret_expires_at": 0
+    "postLogoutRedirectUris": [
+        "http://example.com/logout"
+    ],
+    "scopes": [
+        "read",
+        "write"
+    ],
+    "clientSettings": {
+        "setting1": "value1",
+        "setting2": "value2"
+    },
+    "tokenSettings": {
+        "setting3": "value3",
+        "setting4": "value4"
+    }
 }
 
 
